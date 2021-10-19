@@ -24,7 +24,7 @@ public class HelloController {
 
             RecordVideoThread thread = new RecordVideoThread();
             thread.setFilePath(videoPath);
-            thread.setStreamURL("rtmp://127.0.0.1:8000/live/home");
+            thread.setStreamURL("rtmp://192.168.5.237:1935/test/home");
             thread.start();
         } catch (Exception e) {
             System.out.println("copy file controller, "+e);
